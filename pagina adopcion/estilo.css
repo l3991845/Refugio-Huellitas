@@ -1,0 +1,683 @@
+.seccion_principal{
+    margin: 25px auto;
+    max-width: 80%;
+}
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(194, 117, 76);
+    border: 5px solid rgb(20, 20, 20);  
+}
+
+header {
+    align-items: center;
+    justify-content: space-between; 
+}
+
+footer{
+    justify-content: left;
+    justify-content: space-between; 
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(69, 28, 23);
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    background-color: rgb(196, 123, 49);
+    border: 2px solid rgb(20, 20, 20);
+    border-radius: 28px;
+    padding: 9px 25px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contenido_galeria{
+    text-align: left;
+    width: 250px;
+    margin-right: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.imagen_pata{
+    width: 25px;
+    height: 25px;
+}
+.indice_lineal {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.imagen_firulais {
+    width: 395px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 8px solid rgb(20,20,20);
+    flex-shrink: 0;
+}
+
+.contenedor_principal {
+    width: min(1390px, calc(100% - 70px));
+    margin: 30px auto 36px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+}
+
+.columna_servicios {
+    flex: 1;
+    min-height: 260px;
+    padding: 10px 20px 18px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(208,140,90);
+    border: 4px solid rgb(20, 20, 20);
+    h1{
+        margin: 0 0 2px;
+        color: rgb(77,0,0);
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 900 
+    }
+    p{
+        max-width: 100%;
+        font-size: 29px;
+    }
+}
+
+.información_p{
+    max-width: 100%;
+    font-size: 29px;
+}
+
+.mascota {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 22px 30px;
+    background-color: rgb(208,140,90);
+    border: 4px solid rgb(20, 20, 20);
+}
+
+.informacion-mascota {
+    flex: 1;
+    width: 48%;
+    padding-left: 45px;
+    h1 {
+        margin: 0 0 2px;
+        color: rgb(77,0,0);
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+    }
+    h2 {
+        margin: 0 0 25px;
+        color: rgb(77,0,0);
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        font-size: 31px;
+        font-weight: 800;
+    }
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contenido_galeria{
+    object-position: center;
+    text-align: center;
+    width: 264px;
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: rgb(194, 117, 76);
+    border-radius: 14px;
+    border: 8px solid rgb(20,20,20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    p{
+        font-size: 20px;
+    }
+}
+
+.contenido_galeria:hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.imagen_adopcion{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 8px solid rgb(20,20,20);
+    flex-shrink: 0;
+}
+
+.contenido_galeria_donacion{
+    object-position: center;
+    text-align: center;
+    width: 339px;
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: rgb(194, 117, 76);
+    border-radius: 14px;
+    border: 8px solid rgb(20, 20, 20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.contenido_galeria_donacion:hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgb(197,117,76);
+}
+
+.imagen_donacion{
+    margin-left: 10px auto;
+    margin-top: 10px;
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 8px solid rgb(20, 20, 20);
+    flex-shrink: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_registro{
+    align-content: center;
+    margin: 30px auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;    
+    p{
+        max-width: 100%;
+        font-size: 29px;
+    }
+}
+
+.columna_registro {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(194, 117, 76);
+    border: 4px solid rgb(20, 20, 20);
+}
+
+.contenedor_registro {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.formulario_registro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background-color: rgb(208,140,90);
+    border: 4px solid rgb(20,20,20);
+}
+
+.columna_servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(208,140,90);
+    border: none;
+}
+
+.columna_servicios h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.columna_servicios h2 {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.columna_servicios label {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.columna_servicios input:not([type="checkbox"]) {
+    width: 100%;
+    height: 32px;
+    padding: 5px 8px;
+    background-color: rgb(240,195,160);
+    border: 1px solid rgb(20,20,20);
+}
+
+.columna_registro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 25px;
+    margin: 0;
+    background-color: rgb(208,140,90);
+    border: none;
+}
+
+.columna_registro h2 {
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.opcion_ayuda {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.opcion_ayuda input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.opcion_ayuda label {
+    font-size: 16px;
+    margin: 0;
+}
+
+#botonRegistro {
+    margin: 20px auto;
+}
+
+
+#mensajeGracias {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .contenedor_registro {
+        width: calc(100% - 24px);
+    }
+
+    .formulario_registro {
+        grid-template-columns: 1fr;
+    }
+
+    .columna_servicios,
+    .columna_registro {
+        padding: 15px;
+    }
+
+    .columna_servicios h1 {
+        font-size: 28px;
+    }
+}
+
+.imagen_registro{
+    margin-bottom:20px ;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 8px solid rgb(20, 20, 20);
+    flex-shrink: 0;
+}
+
+#botonRegistro:disabled {
+    background-color: rgb(163, 107, 51);
+    border-color: rgb(20, 20, 20);
+    color: #111;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.contenedor_mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-left: 30px;
+    width: 450px;
+    height: 300px;
+    border-radius: 14px;
+    border: 8px solid rgb(20, 20, 20);
+    overflow: hidden;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.cuadro_puntos_inicio{
+    background-color: rgb(293, 163, 40);
+    
+}
+
+.contenedor_principal_puntos{
+    display: flex;
+}
+
+.contenedor_sec_puntos{
+    justify-content: space-between;
+    display: flex;
+    margin: 20px auto;
+    list-style: none;
+    background-color: rgb(208,140,90);
+    border: 4px solid rgb(20,20,20);
+    width: 850px;
+}
+
+.contenedor_saludo_puntos{
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    width: 450px;
+    height: 465px;
+    background-color: rgb(208,140,90);
+    border: 4px solid rgb(20,20,20);
+    
+    h1{
+        text-align: justify;
+        font-size: xx-large;
+    }
+    p{
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.texto_mapa{
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 14px;
+        padding: 14px 12px;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .indice_lineal {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .boton {
+        max-width: 100%;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .contenedor_principal {
+        width: calc(100% - 24px);
+        margin: 18px auto;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .mascota {
+        min-height: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .imagen_firulais {
+        display: block;
+        width: 100%;
+        max-width: 395px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .informacion-mascota {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .informacion-mascota h1 {
+        font-size: 36px;
+    }
+
+    .informacion-mascota h2 {
+        font-size: 25px;
+    }
+
+    .información_p {
+        font-size: 20px;
+    }
+
+    .columna_servicios {
+        min-width: 0;
+        padding: 14px;
+        margin-bottom: 14px;
+    }
+
+    .columna_servicios h1 {
+        font-size: 30px;
+    }
+
+    .columna_servicios p {
+        font-size: 20px;
+    }
+
+    .galeria {
+        justify-content: center;
+        gap: 16px;
+        padding: 0 8px;
+    }
+
+    .contenido_galeria {
+        width: min(264px, calc(100vw - 32px));
+        margin: 0 0 16px;
+        box-sizing: border-box;
+    }
+
+    .imagen_adopcion {
+        display: block;
+        width: calc(100% - 16px);
+        max-width: 225px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 10px auto 0;
+        box-sizing: border-box;
+    }
+
+    .contenido_galeria_donacion {
+        width: min(339px, calc(100vw - 32px));
+        margin: 0 0 16px;
+        box-sizing: border-box;
+    }
+
+    .imagen_donacion {
+        display: block;
+        width: calc(100% - 16px);
+        max-width: 275px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 10px auto 0;
+        box-sizing: border-box;
+    }
+
+    .titulo {
+        padding: 0 12px;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .contenedor_registro {
+        width: calc(100% - 24px);
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    .columna_registro {
+        padding: 14px;
+        min-width: 0;
+    }
+
+    .columna_registro input:not([type="checkbox"]) {
+        width: 100%;
+        max-width: 400px;
+        min-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .imagen_registro {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 5 / 6;
+    }
+
+    .contenedor_puntos {
+        width: calc(100% - 24px);
+        margin: 16px auto;
+        padding: 12px;
+        min-width: 0;
+    }
+
+    .contenedor_sec_puntos {
+        width: 100%;
+        margin: 14px 0;
+        padding: 12px;
+        flex-direction: column;
+        gap: 14px;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .texto_mapa {
+        width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .texto_mapa h1 {
+        font-size: 22px;
+    }
+
+    .mapa {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        box-sizing: border-box;
+    }
+
+    footer {
+        padding: 12px;
+        text-align: center;
+    }
+
+    footer h3 {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .indice_lineal {
+        gap: 6px;
+    }
+
+    .boton {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+
+    .informacion-mascota h1 {
+        font-size: 30px;
+    }
+
+    .informacion-mascota h2 {
+        font-size: 22px;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+}

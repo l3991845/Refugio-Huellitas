@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mision-adopcion</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<header>
+    <div class="logo">
+        <img class="imagen_pata" src="./imagenes/patita.png" alt="Logo de Refugio Huellitas">
+        <h1>Refugio Huellitas</h1>
+    </div>
+    <div>
+        <nav>
+            <ul class="indice_lineal">
+                <a href="index.html" class="boton"><li>INICIO</li></a>
+                <a href="adopciones.html" class="boton"><li>ADOPCIONES</li></a>
+                <a href="donaciones.html" class="boton"><li>DONAR</li></a>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <section class="contenedor_registro">
+    <form class="formulario_registro">
+
+        <section class="columna_servicios">
+
+            <h1 class="titulo">REGISTRARSE</h1>
+            <h2 class="titulo">
+                Ingresa tus datos para inscribirte a nuestro grupo.
+            </h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required>
+
+        </section>
+
+        <section class="columna_registro">
+
+            <h2>¿QUÉ TIPO DE AYUDA QUIERES BRINDAR?</h2>
+
+            <div class="opcion_ayuda">
+                <input type="checkbox" id="pasear" name="pasear">
+                <label for="pasear">Pasear perros</label>
+            </div>
+
+            <div class="opcion_ayuda">
+                <input type="checkbox" id="donar_alimento" name="donar_alimento">
+                <label for="donar_alimento">Donar alimento</label>
+            </div>
+
+            <div class="opcion_ayuda">
+                <input type="checkbox" id="ayudar_refugio" name="ayudar_refugio">
+                <label for="ayudar_refugio">Ayudar en el refugio</label>
+            </div>
+
+            <div class="opcion_ayuda">
+                <input type="checkbox" id="donar_ropa" name="donar_ropa">
+                <label for="donar_ropa">Donar ropita</label>
+            </div>
+
+            <div class="opcion_ayuda">
+                <input type="checkbox" id="difundir" name="difundir">
+                <label for="difundir">Difundir donaciones</label>
+            </div>
+
+            <button type="submit" id="botonRegistro" class="boton">
+                Registrarse
+            </button>
+
+            <div id="mensajeGracias" hidden>
+                <h2>❤️ ¡Gracias por querer ayudarnos! ❤️</h2>
+                <img class="imagen_registro"
+                     src="./imagenes/perro abrazo.jpeg"
+                     alt="Abrazo">
+            </div>
+
+        </section>
+    </section>
+
+    <script>
+        const formulario = document.querySelector("form");
+        const boton = document.getElementById("botonRegistro");
+        const mensaje = document.getElementById("mensajeGracias");
+
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            boton.textContent = "Registrado";
+            boton.disabled = true;
+
+            mensaje.hidden = false;
+        });
+    </script>
+
+</body>
+<footer>
+    <h3>© 2026 Refugio Huellitas - Adopción Responsable | contacto@refugiohuellitas.org</h3>
+</footer>
+</html>
